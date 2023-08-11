@@ -14,6 +14,7 @@
 		47D25FF62A86239700D4E4AA /* ContactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D25FF52A86239700D4E4AA /* ContactsAppTests.swift */; };
 		47D260002A86239700D4E4AA /* ContactsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D25FFF2A86239700D4E4AA /* ContactsAppUITests.swift */; };
 		47D260022A86239700D4E4AA /* ContactsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D260012A86239700D4E4AA /* ContactsAppUITestsLaunchTests.swift */; };
+		47D2600F2A8625C200D4E4AA /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2600E2A8625C200D4E4AA /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		47D25FFB2A86239700D4E4AA /* ContactsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D25FFF2A86239700D4E4AA /* ContactsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppUITests.swift; sourceTree = "<group>"; };
 		47D260012A86239700D4E4AA /* ContactsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		47D2600E2A8625C200D4E4AA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				47D25FE32A86239400D4E4AA /* ContactsAppApp.swift */,
+				47D2600E2A8625C200D4E4AA /* Contact.swift */,
 				47D25FE52A86239400D4E4AA /* ContentView.swift */,
 				47D25FE72A86239600D4E4AA /* Assets.xcassets */,
 				47D25FE92A86239600D4E4AA /* ContactsApp.entitlements */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D2600F2A8625C200D4E4AA /* Contact.swift in Sources */,
 				47D25FE62A86239400D4E4AA /* ContentView.swift in Sources */,
 				47D25FE42A86239400D4E4AA /* ContactsAppApp.swift in Sources */,
 			);
