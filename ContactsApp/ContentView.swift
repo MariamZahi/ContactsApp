@@ -7,32 +7,40 @@ struct ContentView: View {
     @State private var phoneNumber = ""
 
     var body: some View {
-        NavigationView {
-            VStack {
-                List(contacts) { contact in
-                    NavigationLink(destination: Text(contact.phoneNumber)) {
-                        Text("\(contact.firstName) \(contact.lastName)")
-                    }
+        VStack {
+            List(contacts) { contact in
+                Text("\(contact.firstName) \(contact.lastName)")
+            }
+
+            Divider()
+
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("First Name:")
+                    TextField("Enter first name", text: $firstName)
                 }
-               
-                Form {
-                    Section(header: Text("Add Contact")) {
-                        TextField("First Name", text: $firstName)
-                        TextField("Last Name", text: $lastName)
-                        TextField("Phone Number", text: $phoneNumber)
-                        Button("Add") {
-                            let newContact = Contact(firstName: firstName, lastName: lastName, phoneNumber: phoneNumber)
-                            contacts.append(newContact)
-                            firstName = ""
-                            lastName = ""
-                            phoneNumber = ""
-                        }
-                    }
+
+                VStack(alignment: .leading) {
+                    Text("Last Name:")
+                    TextField("Enter last name", text: $lastName)
+                }
+
+                VStack(alignment: .leading) {
+                    Text("Phone Number:")
+                    TextField("Enter phone number", text: $phoneNumber)
+                }
+
+                Button("Add Contact") {
+                    let newContact = Contact(firstName: firstName, lastName: lastName, phoneNumber: phoneNumber)
+                    contacts.append(newContact)
+                    firstName = ""
+                    lastName = ""
+                    phoneNumber = ""
                 }
             }
+            .padding()
         }
-        .frame(minWidth: 300, idealWidth: 400, maxWidth: .infinity, minHeight: 400, idealHeight: 600, maxHeight: .infinity)
-        .navigationTitle("Contacts")
+        .frame(minWidth: 400, minHeight: 300)
     }
 }
 
@@ -41,4 +49,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
